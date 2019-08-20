@@ -3,7 +3,7 @@ set encoding=utf-8
 filetype  on                   " required!
 filetype plugin on
 filetype indent on
-set rtp+=/Users/laixintao/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 let mapleader=','
 syntax enable
 set tabstop=4
@@ -34,3 +34,13 @@ set pastetoggle=<F2>
 
 " 文件编码的猜测顺序
 set fileencodings=ucs-bom,utf-8,cp936,gb18030,gb2312,big5,euc-jp,euc-kr,latin1
+
+call vundle#begin()
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'leafgarland/typescript-vim'
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
