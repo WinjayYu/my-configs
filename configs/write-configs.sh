@@ -4,7 +4,7 @@ CONFIG_FILES=(
 .vimrc
 .zshrc
 )
-MY_RC_PATH=$1
+MY_RC_PATH=${1:-$PWD}
 
 # backpack dir
 if [ -d ~/old_rcfiles ]
