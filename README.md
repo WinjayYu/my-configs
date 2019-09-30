@@ -1,4 +1,4 @@
-### Install on my zsh
+### Install on-my-zsh
 + cd zsh folder then run below shell:
 ```shell
 	./install-on-zsh.sh
