@@ -1,12 +1,10 @@
 #!/bin/bash
 
-if [[ $(cat /etc/shells) == *zsh* ]]; then
-    echo "zsh is aleady installed"
-    exit 1
+if [[ ! $(cat /etc/shells) == *zsh* ]]; then
+    echo "Start install zsh"
+    apt install zsh   
 fi
 
-echo "Start install zsh"
-apt install zsh
 chsh -s $(which zsh)
 
 echo "Start install on-my-zsh"
